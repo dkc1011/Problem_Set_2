@@ -1,3 +1,5 @@
+package ProblemSet2_Q1;
+
 import javax.swing.*;
 
 public class Book {
@@ -46,8 +48,8 @@ public class Book {
         this.numberOfPages = 0;
     }
 
-    public void toString(String title, float price, String ISBN, int numberOfPages){
-        JOptionPane.showMessageDialog(null,"Title: " + title + "\nPrice: " + price + "\nISBN: " + ISBN + "\nNumber of Pages: " + numberOfPages,"Book",JOptionPane.INFORMATION_MESSAGE);
+    public String toString(){
+        return "Title: " + this.title + "\nPrice: " + this.price + "\nISBN: " + this.ISBN + "\nNumber of Pages: " + this.numberOfPages + "\n\n";
     }
 
     public Book(String title, float price, String ISBN, int numberOfPages){
